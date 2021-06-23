@@ -10,25 +10,31 @@ nav {
   text-align: center;
 }
 
-header ul {
+nav ul {
   width: 100%;
   padding: 2rem 0;
 }
 
-header ul li {
+nav ul li {
   display: inline-block;
   padding: 1rem;
-  margin: 0 8rem 0 8rem;
-  border: 2px solid gold;
-  background-color: bisque;
+  margin: 0 6rem;
+  border: 1px solid teal;
+  background-color: #e8fae0;
   border-radius: 7px;
   list-style: none;
   text-align: center;
+  font-weight: bold;
   cursor: pointer;
+}
+
+header ul li:hover {
+  background-color: aquamarine;
 }
 
 li a {
   text-decoration: none;
+  color: #181717;
 }
 
 body {
@@ -37,37 +43,57 @@ body {
 }
 
 main {
+  height: 100vh;
+}
+
+main section {
   contain: content;
-  width: 80%;
+  width: 60%;
   text-align: center;
-  border: 3px solid gold;
+  border-radius: 40px;
+  background-color: rgb(169, 253, 253);
   margin: auto;
 }
 
 h1 {
   text-align: center;
-  padding: 2rem;
-  color: blue;
+  padding: 1rem;
+  color: green;
+  font-size: 2rem;
 }
 
 p {
-  padding: 2rem;
+  padding: 1rem 2rem;
 }
 
 button {
   padding: 1rem;
-  border: 2px solid gold;
+  border: 2px solid teal;
   border-radius: 7px;
   font-weight: bold;
+  font-style: italic;
   margin-bottom: 2rem;
   font-size: larger;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: blueviolet;
+  background-color: aquamarine;
 }
 
 .hidden {
   display: none;
+}
+
+.fade-in {
+  animation: fadeIn ease 10s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
